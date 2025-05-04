@@ -8,27 +8,27 @@
 ## Proceso de Implementación
 
 ### 1. Creación de Buckets en S3
-![Configuración de buckets S3](pasos_buckets.jpg)
+![Configuración de buckets S3](docs/pasos_buckets.jpg)
 *Configuración de los buckets de almacenamiento para la aplicación.* **Punto B**
 
 ### 2. Despliegue de Instancias EC2
-![Instancias EC2](instancias.jpg)
+![Instancias EC2](docs/instancias.jpg)
 *Instancias de servidor desplegadas en Amazon EC2.*  
 
 ### 3. Configuración de la Infraestructura
-![Configuración general](image.jpg)
+![Configuración general](docs/image.jpg)
 *Vista general de la configuración de la infraestructura.* **Punto C**
 
 ### 4. Configuración del JSON
-![Archivo de configuración JSON](json.jpg)
+![Archivo de configuración JSON](docs/json.jpg)
 *Configuración JSON para las definiciones del servicio.*
 
 ### 5. Despliegue de Contenedores Docker
-![Contenedores Docker](dockernodels.jpg)
+![Contenedores Docker](docs/dockernodels.jpg)
 *Despliegue de los contenedores Docker para la aplicación.*
 
 ### 6. Escalado de Réplicas
-![Réplicas Docker](dockerreplicas.jpg)
+![Réplicas Docker](docs/dockerreplicas.jpg)
 *Configuración de réplicas para asegurar alta disponibilidad.* **Punto A**
 
 ## Acceso al Proyecto
