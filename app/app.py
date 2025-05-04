@@ -12,7 +12,7 @@ pokeneas = [
         "nombre": "Informático",
         "altura": "1.75m",
         "habilidad": "Experto visualizador de muñequitas anime",
-        "imagen": "informatico.jpg",  # Nombre de tu archivo
+        "imagen": "informatico.jpg",
         "frase": "Sabes por qué te fuiste baneado, juanceto01?"
     },
     {
@@ -92,8 +92,9 @@ def pokenea_json():
 @app.route('/pokenea/html')
 def pokenea_html():
     pokenea = get_random_pokenea()
+    S3_BUCKET_URL = "https://bucket-pokeneas.s3.amazonaws.com"
     
-    image_url = url_for('static', filename=pokenea['imagen'])
+    image_url = f"{S3_BUCKET_URL}/{pokenea['imagen']}"
     
     return render_template('pokenea.html',
                          image_url=image_url,
